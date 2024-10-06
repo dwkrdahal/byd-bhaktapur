@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYD Bhaktapur Showroom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Additional styles for image captions */
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-container:hover .caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <header class="text-gray-600 body-font fixed top-0 left-0 right-0 z-10 bg-white shadow">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <a href="index.html" class="ml-3 text-xl" style="text-decoration: none; color: inherit;">
+                    BYD Bhaktapur
+                </a>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900" href="index.html">Vehicle</a>
+                <a class="mr-5 hover:text-gray-900" href="gallery.html">Gallery</a>
+                <a class="mr-5 hover:text-gray-900" href="charging.html">Charging</a>
+                <a class="mr-5 hover:text-gray-900" href="aboutus.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex w-full mb-20 flex-wrap">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/2 lg:mb-0 mb-4">
+                    BYD Bhaktapur Showroom</h1>
+                <h2 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/2 lg:mb-0 mb-4">
+                    BYD Bhaktapur Family Pictures Celebrating Happy Delivery.</h2>
+            </div>
+
+            <div class="flex flex-wrap md:-m-2 -m-1">
+                <!-- First Column -->
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-1/2 image-container">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/500x300">
+                        <div class="caption">Delivery Day Celebration 1</div>
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2 image-container">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/501x301">
+                        <div class="caption">Happy Customers 1</div>
+                    </div>
+                    <div class="md:p-2 p-1 w-full image-container">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360">
+                        <div class="caption">Celebrating with Family</div>
+                    </div>
+                </div>
+
+                <!-- Second Column -->
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-full image-container">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361">
+                        <div class="caption">Excited to Drive Home</div>
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2 image-container">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/502x302">
+                        <div class="caption">Another Happy Delivery</div>
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2 image-container">
+                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/503x303">
+                        <div class="caption">Joyful Moments</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

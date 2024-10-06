@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+
+    <header class="text-gray-600 body-font fixed top-0 left-0 right-0 z-10 bg-white shadow">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <a href="index.html" class="ml-3 text-xl" style="text-decoration: none; color: inherit;">
+                    BYD Bhaktapur
+                </a>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900" href="index.html">Vehicle</a>
+                <a class="mr-5 hover:text-gray-900" href="gallery.html">Gallery</a>
+                <a class="mr-5 hover:text-gray-900" href="charging.html">Charging</a>
+                <a class="mr-5 hover:text-gray-900" href="aboutus.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+     
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Add a filter to make the map appear darker */
+    .dark-map iframe {
+      filter: brightness(50%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-wrap">
+      
+      <!-- Map on the left -->
+      
+      <div class="lg:w-1/2 w-full dark-map">
+        <h1>Test-Drive Routes</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.974679418983!2d85.42102137436473!3d27.67704648271229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bbf80ff8c91%3A0x832d20ec3055dc2a!2sBYD%20Showroom%2C%20Sirjanagar%2C%20Bhaktapur!5e0!3m2!1sen!2snp!4v1695746123456!5m2!1sen!2snp"
+          width="100%" 
+          height="500px" 
+          frameborder="0" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Form on the right -->
+      <div class="lg:w-1/2 w-full bg-gray-100 bg-opacity-80 rounded-lg p-8 flex flex-col md:ml-auto mt-10 lg:mt-0">
+        <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Test Drive Form</h2>
+        <div class="relative mb-4">
+          <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
+          <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+          <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+        </div>
+        <div class="relative mb-4">
+          <label for="phone" class="leading-7 text-sm text-gray-600">Contact Number</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="123-456-7890" required>
+          <small class="text-gray-500">Format: 123-456-7890</small>
+        </div>
+        <div class="relative mb-4">
+          <label for="address" class="leading-7 text-sm text-gray-600">Address</label>
+          <input type="text" id="address" name="address" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+        </div>
+        <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+        <p class="text-xs text-gray-500 mt-3">Sign up to explore BYD Bhaktapur Test Drive routes.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
